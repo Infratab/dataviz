@@ -27,12 +27,14 @@ Defaults
  total: 100,
  units: "Points",
  filledColor: #00e676,
- unfilledColor: #,
+ unfilledColor: #bdc3c7,
  fontColor: #000000,
  bgColor: #ffffff,
  clockFace: False
 } 
 ```
+{{Insert an image of donut with all the defaults and a div around it, which has a black border}}
+
 **domElement** is the elementID of the HTML DOM element that the donut should be placed in. Default domElement is _#donutDiv_
 
 ```drawDonut({domElement: #donutDiv2})```
@@ -75,11 +77,12 @@ Defaults
 
 {{Insert an image of a donut with 80 hours as the text inside and displaying a dial around it}}
 
-- Color
-  - Filled area color of the donut ring
-  - Unfilled area color of the donut ring
-  - Text color (Value and unit)
+**filledColor** is the color of the donut that displays remaining resource whereas **unfilledColor** is the color of the donut that displays the spent resource. **bgColor** is used for applying a color to the background of the div (HTML DOM element) that the donut is placed in. This allows to make the donut blend in with whatever application background that it is used in.
 
+**fontColor** is the color of the text inside the donut. This can be just the value text or the value along with the units text.
 
+By default, the filled, unfilled, font and background colors are #00e676, #bdc3c7, #000000 and #ffffff.
 
+```drawDonut({filledColor: _#ff0000_, unfilledColor: _#ffffff_, bgColor: _#00bcd4_, fontColor: _#ffffff_})```
 
+{{Insert an image of a donut with a red filled and white unfilled ring in a cyan colored background for the div and white font}}
