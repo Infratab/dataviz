@@ -1,10 +1,10 @@
 # Dataviz
 ### Library
 
-- drawDonut
+- [drawDonut](https://github.com/Infratab/dataviz/blob/master/README.md#drawdonut)
  
 
-### drawDonut
+### drawDonut(_Size, domElement, Value, Total, Unit, color, clockFace_)
 
 - Size
   - Relative to the domElement that contains the donut. Default size is 100%
