@@ -65,13 +65,13 @@ Defaults
 
 ```drawDonut({units: _"hours"_})```
 
-{{Insert an image of a donut with 80 hours as the text inside}}
+![80hr](https://cloud.githubusercontent.com/assets/13765124/13427143/06a2a1fc-dfd8-11e5-8c72-05f609934bbc.png)
 
 **Please note** that, if an empty string is passed, then text inside donut will be displayed as one single line, just displaying the value - which is centered.
 
 ```drawDonut({units: _""_})```
 
-{{Insert an image of a donut displaying only 80 - centered}}
+![80](https://cloud.githubusercontent.com/assets/13765124/13427156/161ff828-dfd8-11e5-9a5a-182355ce44c8.png)
 
 **clockFace** is a boolean value which provides a dial around the donut when true. This is a mighty useful way to visualize the time remaining as a donut. By default, clockFace is False.
 
