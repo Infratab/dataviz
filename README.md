@@ -77,7 +77,7 @@ Defaults
 
 ```drawDonut({units: _"hours", clockFace: _True_})```
 
-{{Insert an image of a donut with 80 hours as the text inside and displaying a dial around it}}
+![80tick](https://cloud.githubusercontent.com/assets/13765124/13427301/15a0ba8a-dfd9-11e5-926c-e7b21ea1b196.png)
 
 **filledColor** is the color of the donut that displays remaining resource whereas **unfilledColor** is the color of the donut that displays the spent resource. **bgColor** is used for applying a color to the background of the div (HTML DOM element) that the donut is placed in. This allows to make the donut blend in with whatever application background that it is used in.
 
