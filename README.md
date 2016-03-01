@@ -65,7 +65,7 @@ Defaults
 
 {{Insert an image of a donut with 80 hours as the text inside}}
 
-**Please Note** that, if an empty string is passed, then text inside donut will be displayed as one single line, just displaying the value - which is centered.
+**Please note** that, if an empty string is passed, then text inside donut will be displayed as one single line, just displaying the value - which is centered.
 
 ```drawDonut({units: _""_})```
 
