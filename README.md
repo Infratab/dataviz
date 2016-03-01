@@ -74,7 +74,7 @@ Defaults
 
 ```drawDonut({units: _""_})```
 
-![80](https://cloud.githubusercontent.com/assets/13765124/13427156/161ff828-dfd8-11e5-9a5a-182355ce44c8.png)
+![80](https://cloud.githubusercontent.com/assets/13765124/13439951/d5f54436-e015-11e5-80b8-7e301362f78b.png)
 
 **clockFace** is a boolean value which provides a dial around the donut when true. This is a mighty useful way to visualize the time remaining as a donut. By default, clockFace is False.
 
