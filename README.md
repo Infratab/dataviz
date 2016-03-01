@@ -90,4 +90,4 @@ By default, the filled, unfilled, font and background colors are #00e676, #bdc3c
 
 ```drawDonut({filledColor: _#ff0000_, unfilledColor: _#ffffff_, bgColor: _#00bcd4_, fontColor: _#ffffff_})```
 
-![bg-color](https://cloud.githubusercontent.com/assets/13765124/13427186/582be286-dfd8-11e5-8657-53cb93881a18.png)
+![bg-color](https://cloud.githubusercontent.com/assets/13765124/13439885/7b48c558-e015-11e5-86c6-9fbf3415f9b7.png)
