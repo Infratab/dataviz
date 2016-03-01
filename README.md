@@ -19,7 +19,7 @@ drawDonut({
 ```
 
 Defaults
-
+```
 {
  domElement: #donutDiv,
  size: 100,
@@ -32,7 +32,7 @@ Defaults
  bgColor: #ffffff,
  clockFace: False
 } 
-
+```
 - domElement
   - The elementID that the donut should be placed in
 
