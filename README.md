@@ -37,7 +37,7 @@ Defaults
 } 
 ```
 
-![default](https://cloud.githubusercontent.com/assets/13765124/13426786/ccdafbe2-dfd5-11e5-8b88-2c9a88bb58c2.png)
+![default](https://cloud.githubusercontent.com/assets/13765124/13439850/4fb32a50-e015-11e5-8550-d161292e69e4.png)
 
 
 **domElement** is the elementID of the HTML DOM element that the donut should be placed in. Default domElement is _#donutDiv_
