@@ -39,7 +39,6 @@ Define defaults
 - Unit
   - If passed, will be shown in the second line inside the donut
   - If ignored, text inside donut will be single line, just displaying the value
-  - 
 
 - clockFace
   - Boolean value which provides a dial around the donut when true. This is a mighty useful way to visualize the time remaining as a donut
