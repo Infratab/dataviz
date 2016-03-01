@@ -56,7 +56,7 @@ Defaults
 
 ```drawDonut({value: _40_})```
   
-![40](https://cloud.githubusercontent.com/assets/13765124/13427195/6bb27da6-dfd8-11e5-9715-bfff931ede6e.png)
+![40](https://cloud.githubusercontent.com/assets/13765124/13440074/4c1a8388-e016-11e5-95ce-94376803e55b.png)
 
 **total** is the maximum value that can be displayed in the donut. Default total is 100.
 
