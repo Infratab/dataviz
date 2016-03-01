@@ -47,7 +47,7 @@ Defaults
 
 ```drawDonut({size: _35_})```
 
-{{Insert one image of donut on a div with a border, where donut size is 35}}
+![size35](https://cloud.githubusercontent.com/assets/13765124/13426876/6d93cba4-dfd6-11e5-9082-62b1af669bb8.png)
 
 **value** determines the percentage fill of the donut ring. It also updates the text inside the donut. Default value is 80.
 
