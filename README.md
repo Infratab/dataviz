@@ -33,7 +33,9 @@ Defaults
  clockFace: False
 } 
 ```
-{{Insert an image of donut with all the defaults and a div around it, which has a black border}}
+
+![default](https://cloud.githubusercontent.com/assets/13765124/13426786/ccdafbe2-dfd5-11e5-8b88-2c9a88bb58c2.png)
+
 
 **domElement** is the elementID of the HTML DOM element that the donut should be placed in. Default domElement is _#donutDiv_
 
