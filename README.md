@@ -59,7 +59,7 @@ Defaults
 
 ```drawDonut({value: _25_, total: _30_})```
 
-{{Insert an image of a donut with 25 as the value showing a 75% fill}}
+![25points](https://cloud.githubusercontent.com/assets/13765124/13426918/ab266a4e-dfd6-11e5-8731-176c0e80467e.png)
 
 **units** text string will be shown in the second line inside the donut - under the value text. Default units are "points".
 
