@@ -21,12 +21,17 @@ Define defaults
 
 - Size
   - Relative to the domElement that contains the donut. Default size is 100%
-  - drawDonut({size: _65_})
-  - {{Insert two images of donut on a div with a background color, where donut size is (a) 65 and (b) 100}}
+
+```drawDonut({size: _65_})```
+
+{{Insert two images of donut on a div with a background color, where donut size is (a) 65 and (b) 100}}
 
 - domElement
   - The elementID that the donut should be placed in
-  - {{Insert one image which has the div name in it and subscript whic says "domElement = div name"}}
+
+```drawDonut({domElement: #donutDiv})```
+
+{{Insert one image which has the div name in it and subscript whic says "domElement = div name"}}
 
 - Value
   - Text inside the donut
