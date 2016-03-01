@@ -26,26 +26,24 @@ Defaults
  value: 80,
  total: 100,
  unit: "Points",
- filledColor: #,
+ filledColor: #00e676,
  unfilledColor: #,
  fontColor: #000000,
  bgColor: #ffffff,
  clockFace: False
 } 
 ```
-- domElement
-  - The elementID that the donut should be placed in
+**domElement** is the elementID of the HTML DOM element that the donut should be placed in
 
 ```drawDonut({domElement: #donutDiv})```
 
-{{Insert one image which has the div name in it and subscript whic says "domElement = div name"}}
+{{Insert one image which has the div name in it}}
 
-- size
-  - Relative to the domElement that contains the donut. Default size is 100%
+**size** is relative to the size of the domElement that contains the donut. The size parameter is interpreted in percentage terms. Default size is 100%.
 
-```drawDonut({size: _65_})```
+```drawDonut({size: _35_})```
 
-{{Insert two images of donut on a div with a background color, where donut size is (a) 65 and (b) 100}}
+{{Insert one image of donut on a div with a background color, where donut size is (a) 65 and (b) 100}}
 
 
 
