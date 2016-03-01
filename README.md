@@ -53,7 +53,7 @@ Defaults
 
 ```drawDonut({value: _40_})```
   
-{{Insert one images of donut with value of 40}}
+![40](https://cloud.githubusercontent.com/assets/13765124/13427195/6bb27da6-dfd8-11e5-9715-bfff931ede6e.png)
 
 **total** is the maximum value that can be displayed in the donut. Default total is 100.
 
@@ -87,4 +87,4 @@ By default, the filled, unfilled, font and background colors are #00e676, #bdc3c
 
 ```drawDonut({filledColor: _#ff0000_, unfilledColor: _#ffffff_, bgColor: _#00bcd4_, fontColor: _#ffffff_})```
 
-{{Insert an image of a donut with a red filled and white unfilled ring in a cyan colored background for the div and white font}}
+![bg-color](https://cloud.githubusercontent.com/assets/13765124/13427186/582be286-dfd8-11e5-8657-53cb93881a18.png)
