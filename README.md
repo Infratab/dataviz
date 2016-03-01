@@ -44,6 +44,8 @@ Defaults
 
 ```drawDonut({domElement: #donutDiv2})```
 
+{{Add smaller size image}}
+
 ![defaultwitharrow](https://cloud.githubusercontent.com/assets/13765124/13426834/20c0e0e6-dfd6-11e5-928c-9615339de912.png)
 
 **size** is relative to the size of the domElement that contains the donut. The size parameter is interpreted in percentage terms. Default size is 100%.
@@ -79,6 +81,8 @@ Defaults
 **clockFace** is a boolean value which provides a dial around the donut when true. This is a mighty useful way to visualize the time remaining as a donut. By default, clockFace is False.
 
 ```drawDonut({units: _"hours", clockFace: _True_})```
+
+{{add smaller size image}}
 
 ![80tick](https://cloud.githubusercontent.com/assets/13765124/13427301/15a0ba8a-dfd9-11e5-926c-e7b21ea1b196.png)
 
