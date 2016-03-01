@@ -27,7 +27,7 @@ Defaults
  total: 100,
  units: "Points",
  filledColor: #1abc9c,
- unfilledColor: #bdc3c7,
+ unfilledColor: #bccbcc,
  fontColor: #000000,
  bgColor: #ffffff,
  clockFace: False
