@@ -25,7 +25,7 @@ Defaults
  size: 100,
  value: 80,
  total: 100,
- unit: "Points",
+ units: "Points",
  filledColor: #00e676,
  unfilledColor: #,
  fontColor: #000000,
@@ -33,9 +33,9 @@ Defaults
  clockFace: False
 } 
 ```
-**domElement** is the elementID of the HTML DOM element that the donut should be placed in
+**domElement** is the elementID of the HTML DOM element that the donut should be placed in. Default domElement is _#donutDiv_
 
-```drawDonut({domElement: #donutDiv})```
+```drawDonut({domElement: #donutDiv2})```
 
 {{Insert one image which has the div name in it}}
 
@@ -43,27 +43,37 @@ Defaults
 
 ```drawDonut({size: _35_})```
 
-{{Insert one image of donut on a div with a background color, where donut size is (a) 65 and (b) 100}}
+{{Insert one image of donut on a div with a border, where donut size is 35}}
 
+**value** determines the percentage fill of the donut ring. It also updates the text inside the donut. Default value is 80.
 
-
-- value
-  - Text inside the donut
-  - Percentage fill of the donut ring
-
-```drawDonut({value
+```drawDonut({value: _40_})```
   
-  - {{Insert two images of donuts, one with value of 95 and another with value of 40 - no unit in both of these images}}
+{{Insert one images of donut with value of 40}}
 
-- Total
-  - The maximum value that can be displayed in the donut. Default total is 100.
+**total** is the maximum value that can be displayed in the donut. Default total is 100.
 
-- Unit
-  - If passed, will be shown in the second line inside the donut
-  - If ignored, text inside donut will be single line, just displaying the value
+```drawDonut({value: _25_, total: _30_})```
 
-- clockFace
-  - Boolean value which provides a dial around the donut when true. This is a mighty useful way to visualize the time remaining as a donut
+{{Insert an image of a donut with 25 as the value showing a 75% fill}}
+
+**units** text string will be shown in the second line inside the donut - under the value text. Default units are "points".
+
+```drawDonut({units: _"hours"_})```
+
+{{Insert an image of a donut with 80 hours as the text inside}}
+
+**Please Note** that, if an empty string is passed, then text inside donut will be displayed as one single line, just displaying the value - which is centered.
+
+```drawDonut({units: _""_})```
+
+{{Insert an image of a donut displaying only 80 - centered}}
+
+**clockFace** is a boolean value which provides a dial around the donut when true. This is a mighty useful way to visualize the time remaining as a donut. By default, clockFace is False.
+
+```drawDonut({units: _"hours", clockFace: _True_})```
+
+{{Insert an image of a donut with 80 hours as the text inside and displaying a dial around it}}
 
 - Color
   - Filled area color of the donut ring
