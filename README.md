@@ -7,24 +7,31 @@
 ### drawDonut
 
 ```
-drawDonut({size: _number_,
+drawDonut({
            domElement: _#id_,
+           size: _number_,
            value: _number_,
-           Total: _number_,
+           total: _number_,
            unit: _string_,
            color: _#ffffff_,
            clockFace: _boolean_
           })
 ```
 
-Define defaults
+Defaults
 
-- Size
-  - Relative to the domElement that contains the donut. Default size is 100%
-
-```drawDonut({size: _65_})```
-
-{{Insert two images of donut on a div with a background color, where donut size is (a) 65 and (b) 100}}
+{
+ domElement: #donutDiv,
+ size: 100,
+ value: 80,
+ total: 100,
+ unit: "Points",
+ filledColor: #,
+ unfilledColor: #,
+ fontColor: #000000,
+ bgColor: #ffffff,
+ clockFace: False
+} 
 
 - domElement
   - The elementID that the donut should be placed in
@@ -33,9 +40,21 @@ Define defaults
 
 {{Insert one image which has the div name in it and subscript whic says "domElement = div name"}}
 
-- Value
+- size
+  - Relative to the domElement that contains the donut. Default size is 100%
+
+```drawDonut({size: _65_})```
+
+{{Insert two images of donut on a div with a background color, where donut size is (a) 65 and (b) 100}}
+
+
+
+- value
   - Text inside the donut
   - Percentage fill of the donut ring
+
+```drawDonut({value
+  
   - {{Insert two images of donuts, one with value of 95 and another with value of 40 - no unit in both of these images}}
 
 - Total
