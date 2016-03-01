@@ -13,7 +13,10 @@ drawDonut({
            value: _number_,
            total: _number_,
            unit: _string_,
-           color: _#ffffff_,
+           filledColor: _#ffffff_,
+           unfilledColor:_#ffffff_,
+           fontColor:_#ffffff_,
+           bgColorL_#ffffff_,
            clockFace: _boolean_
           })
 ```
@@ -25,7 +28,7 @@ Defaults
  size: 100,
  value: 80,
  total: 100,
- units: "Points",
+ unit: "Points",
  filledColor: #1abc9c,
  unfilledColor: #bccbcc,
  fontColor: #000000,
