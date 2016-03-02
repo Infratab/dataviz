@@ -42,6 +42,7 @@ window.drawDonut = function(domElementId,options){
   drawDonutText();
   drawDonutPaths();
   drawClockTicks();
+  backgroundColrDonutDiv();
 
   function initialize(){
 
@@ -256,5 +257,10 @@ window.drawDonut = function(domElementId,options){
             .style('stroke-width',1)
             .style('stroke','#000');
       }
+  };
+
+  function backgroundColrDonutDiv(){
+    d3.select("#"+domElement)
+       .style("background-color", bgColor);
   };
 };
