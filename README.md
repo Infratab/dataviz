@@ -6,6 +6,8 @@
 
 ### drawDonut
 
+A test project is available [here](https://drive.google.com/open?id=0B47ga7eHST-RYmM4RTJEYWpNbTg)
+
 ```
 drawDonut( domElement , {
            size: number,
