@@ -40,8 +40,8 @@ window.drawDonut = function(domElementId,options){
   initialize();
   drawDonutSvg();
   drawDonutText();
+  drawDonutPaths();
  
-
   function initialize(){
 
     domElement = domElementId;
@@ -124,4 +124,62 @@ window.drawDonut = function(domElementId,options){
     }
   };
 
+  function drawDonutPaths() {
+    donutGroup.append("path")
+              .data([{
+                  startAngle: 0 * ui.pi,
+                  endAngle: ui.pi
+              }])
+              .attr("id", "lineOne_" + domElement)
+              .attr("d", arc)
+              .style("fill", unfilledColor);
+
+    donutGroup.append("path")
+              .data([{
+                  startAngle: 0 * ui.pi,
+                  endAngle: (0 / total) * ui.pi
+              }])
+              .attr("id", "lineTwo_" + domElement)
+              .attr("d", arcTwo)
+              .style("fill", filledColor);
+
+    var arc2 = d3.svg.arc().innerRadius(ui.innerRadiusTwo).outerRadius(ui.outerRadiusTwo);
+    var arcTweenOne = function(transition, newAngle) {
+        transition.attrTween("d", function(d) {
+            d.innerRadius = ui.innerRadius;
+            d.outerRadius = ui.outerRadius;
+            var interpolate = d3.interpolate(d.startAngle, newAngle);
+            return function(t) {
+                d.startAngle = interpolate(t);
+                return arc(d);
+            };
+        });
+    };
+
+    var arcTweenTwo = function(transition, newAngle) {
+        transition.attrTween("d", function(d) {
+            d.innerRadius = ui.innerRadiusTwo;
+            d.outerRadius = ui.outerRadiusTwo;
+            var interpolate = d3.interpolate(d.endAngle, newAngle);
+            return function(t) {
+                d.endAngle = interpolate(t);
+                return arc2(d);
+            };
+        });
+    };
+
+    donutGroup.select("#lineOne_" + domElement)
+        .attr("d", arc)
+        .transition()
+        .duration(2000)
+        .call(arcTweenOne, (Number(value) / total) *ui.pi);
+
+    donutGroup.select("#lineTwo_" + domElement)
+        .attr("d", arc2)
+        .transition()
+        .duration(2000)
+        .call(arcTweenTwo, (Number(value) / total) * ui.pi);
+  };
+
+  
 };
