@@ -41,7 +41,8 @@ window.drawDonut = function(domElementId,options){
   drawDonutSvg();
   drawDonutText();
   drawDonutPaths();
- 
+  drawClockTicks();
+
   function initialize(){
 
     domElement = domElementId;
@@ -181,5 +182,79 @@ window.drawDonut = function(domElementId,options){
         .call(arcTweenTwo, (Number(value) / total) * ui.pi);
   };
 
-  
+  function drawClockTicks() {
+    var clockFaceGroup =donutGroup.append('g');
+
+    clockFaceGroup.append('div').attr('id','donutWidth').text(85);
+    clockFaceGroup.append('div').attr('id','donutHeight').text(85);
+
+    function findSize (domElement,donutTicksGroup){
+        var svgEle=d3.select("#"+domElement).select(donutTicksGroup)[0][0];
+        if (svgEle) {
+            return Number(svgEle.textContent);
+        }else{
+            return 0;
+        }
+      };
+
+      if(clockFace){
+          var width = findSize(domElement,'#donutWidth'),
+              height = findSize(domElement,'#donutHeight'),
+              tickRadius = Math.min(width/2,height/2)/2,
+              secondTickStart = tickRadius,
+              secondTickLength = -width*0.014,
+              hourTickStart = tickRadius,
+              hourTickLength = secondTickLength*1.8;
+
+          var secondScale = d3.scale.linear()
+                              .range([0,354])
+                              .domain([0,59]);
+          var hourScale = d3.scale.linear()
+                            .range([0,330])
+                            .domain([0,11]);
+
+          donutGroup.timeTicks =donutGroup.append('g')
+                                          .attr('id','timeTicks');
+          
+          donutGroup.timeTicks.append('g')
+                              .attr('id','secondsTick');
+          
+          donutGroup.timeTicks.append('g')
+                              .attr('id','hoursTick');
+
+          d3.select("#"+domElement)
+            .select('#secondsTick')
+            .selectAll('.second-tick')
+            .data(d3.range(0,60))
+            .enter()
+            .append('line')
+            .attr('class', 'second-tick')
+            .attr('x1',0)
+            .attr('x2',0)
+            .attr('y1',secondTickStart)
+            .attr('y2',secondTickStart + secondTickLength)
+            .attr('transform',function(d){
+                return 'rotate(' + secondScale(d) + ')';
+            })
+            .style('stroke-width',0.5)
+            .style('stroke','#000');
+
+          d3.select("#"+domElement)
+            .select('#hoursTick')
+            .selectAll('.hour-tick')
+            .data(d3.range(0,12))
+            .enter()
+            .append('line')
+            .attr('class', 'hour-tick')
+            .attr('x1',0)
+            .attr('x2',0)
+            .attr('y1',hourTickStart)
+            .attr('y2',hourTickStart + hourTickLength)
+            .attr('transform',function(d){
+                return 'rotate(' + hourScale(d) + ')';
+            })
+            .style('stroke-width',1)
+            .style('stroke','#000');
+      }
+  };
 };
