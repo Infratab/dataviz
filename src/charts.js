@@ -38,6 +38,7 @@ window.drawDonut = function(domElementId,options){
   var donutGroup;
 
   initialize();
+  drawDonutSvg();
   
 
   function initialize(){
@@ -68,6 +69,21 @@ window.drawDonut = function(domElementId,options){
   
     d3.select("#"+domElement).select("#donut_"+domElement).remove();
 
+  };
+
+  function drawDonutSvg(){
+    donutSVG= d3.select("#"+domElement)
+                  .append("svg")
+                  .classed("donut", true)
+                  .attr("id", "donut_" + domElement)
+                  .attr("width", svgSize+"%")
+                  .attr("height", svgSize+"%")
+                  .attr("viewBox", "0 -6 36 50")
+                  .attr("preserveAspectRatio", "xMidYMid");
+    
+    donutGroup = donutSVG.append("g")
+                          .attr("id", "donutID")
+                          .attr("transform", "translate(" + Math.min(ui.width, ui.height) / 2 + "," + Math.min(ui.width, ui.height) / 2 + ")");
   };
 
 
