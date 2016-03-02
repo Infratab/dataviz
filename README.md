@@ -70,7 +70,7 @@ Defaults
 
 ```drawDonut({units: _"hours"_})```
 
-![80tick 1](https://cloud.githubusercontent.com/assets/13765124/13451352/4a488cfa-e064-11e5-80d5-9c0e0172a100.png)
+![80hr](https://cloud.githubusercontent.com/assets/13765124/13451392/a1b001d0-e064-11e5-9c0d-afac9f5be7e9.png)
 
 **Please note** that, if an empty string is passed, then text inside donut will be displayed as one single line, just displaying the value - which is centered.
 
@@ -81,8 +81,6 @@ Defaults
 **clockFace** is a boolean value which provides a dial around the donut when true. This is a mighty useful way to visualize the time remaining as a donut. By default, clockFace is False.
 
 ```drawDonut({units: _"hours", clockFace: _True_})```
-
-{{add smaller size image}}
 
 ![80tick 1](https://cloud.githubusercontent.com/assets/13765124/13451352/4a488cfa-e064-11e5-80d5-9c0e0172a100.png)
 
