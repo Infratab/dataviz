@@ -70,7 +70,7 @@ Defaults
 
 ```drawDonut({units: _"hours"_})```
 
-![80hr](https://cloud.githubusercontent.com/assets/13765124/13439923/b7976ba4-e015-11e5-8cfc-4eb798de127a.png)
+![80tick 1](https://cloud.githubusercontent.com/assets/13765124/13451352/4a488cfa-e064-11e5-80d5-9c0e0172a100.png)
 
 **Please note** that, if an empty string is passed, then text inside donut will be displayed as one single line, just displaying the value - which is centered.
 
