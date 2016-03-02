@@ -44,9 +44,7 @@ Defaults
 
 ```drawDonut({domElement: #donutDiv2})```
 
-{{Add smaller size image}}
-
-![defaultwitharrow](https://cloud.githubusercontent.com/assets/13765124/13426834/20c0e0e6-dfd6-11e5-928c-9615339de912.png)
+![donuts](https://cloud.githubusercontent.com/assets/13765124/13451424/d7f53fe4-e064-11e5-8b73-dd45514077ee.png)
 
 **size** is relative to the size of the domElement that contains the donut. The size parameter is interpreted in percentage terms. Default size is 100%.
 
