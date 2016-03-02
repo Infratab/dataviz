@@ -7,7 +7,7 @@
 ### drawDonut
 
 ```
-drawDonut(_domElement_, {
+drawDonut( _domElement_ , {
            size: _number_,
            value: _number_,
            total: _number_,
