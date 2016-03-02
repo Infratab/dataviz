@@ -7,8 +7,7 @@
 ### drawDonut
 
 ```
-drawDonut({
-           domElement: _#id_,
+drawDonut(_domElement_, {
            size: _number_,
            value: _number_,
            total: _number_,
@@ -24,7 +23,6 @@ drawDonut({
 Defaults
 ```
 {
- domElement: #donutDiv,
  size: 100,
  value: 80,
  total: 100,
@@ -42,7 +40,7 @@ Defaults
 
 **domElement** is the elementID of the HTML DOM element that the donut should be placed in. Default domElement is _#donutDiv_
 
-```drawDonut({domElement: #donutDiv2})```
+```drawDonut(donutDiv2)```
 
 ![donuts](https://cloud.githubusercontent.com/assets/13765124/13451424/d7f53fe4-e064-11e5-8b73-dd45514077ee.png)
 
