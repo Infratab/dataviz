@@ -39,7 +39,8 @@ window.drawDonut = function(domElementId,options){
 
   initialize();
   drawDonutSvg();
-  
+  drawDonutText();
+ 
 
   function initialize(){
 
@@ -86,5 +87,41 @@ window.drawDonut = function(domElementId,options){
                           .attr("transform", "translate(" + Math.min(ui.width, ui.height) / 2 + "," + Math.min(ui.width, ui.height) / 2 + ")");
   };
 
+  function drawDonutText() {
+    if(unit){
+      donutGroup.append("g")
+                .append("text")
+                .classed("donutText", true)
+                .attr("id", "donutTextID")
+                .attr("text-anchor", "middle")
+                .attr("dy", -ui.height * 0.07)
+                .attr("dx", 0)
+                .style("font-size", ui.height * 0.01 + "em")
+                .style("fill", fontColor)
+                .text(value);
+
+        donutGroup.append("g")
+                  .append("text")
+                  .classed("donutText", true)
+                  .attr("id", "donutUnitID")
+                  .attr("text-anchor", "middle")
+                  .attr("dy", ui.height * 0.13)
+                  .attr("dx", 0)
+                  .style("font-size", ui.height * 0.01 + "em")
+                  .style("fill", fontColor)
+                  .text(unit);
+    } else {
+        donutGroup.append("g")
+                  .append("text")
+                  .classed("donutText", true)
+                  .attr("id", "donutTextID")
+                  .attr("text-anchor", "middle")
+                  .attr("dy",4)
+                  .attr("dx", 0)
+                  .style("font-size", ui.height * 0.025 + "em")
+                  .style("fill", fontColor)
+                  .text(value);
+    }
+  };
 
 };
