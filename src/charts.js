@@ -260,7 +260,6 @@ window.drawDonut = function(domElementId,options){
   };
 
   function backgroundColrDonutDiv(){
-    d3.select("#"+domElement)
-       .style("background-color", bgColor);
+    document.getElementById(domElement).style.backgroundColor = bgColor;
   };
 };
